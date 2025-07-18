@@ -1,0 +1,6 @@
+name = "omuoso"
+school = 670
+
+print("my name is",name)
+print("my school is",school)
+
