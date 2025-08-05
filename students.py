@@ -38,7 +38,14 @@ students[upin]["average"] = average
 students[upin]["exam_status"] = exam_status  
 
 
-
+print(f"Student: {students[upin]['name']}")
+print(f"Total Attendance: {students[upin]['Attendance']}")
+print(f"Status: {students[upin]['status']}")
+print(f"Average Score: {average:.2f}")
+print(f"Exam Status: {exam_status}")
+print("Subject-wise grades:")
+for subject, grade in grades.items():
+    print(f"  {subject}: {grade}")
 
 
 
