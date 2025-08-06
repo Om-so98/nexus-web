@@ -1,0 +1,62 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f8fb;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header styling */
+header {
+  background-color: #007acc;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+/* Section headings */
+section h2 {
+  color: #007acc;
+  margin-bottom: 10px;
+}
+
+/* Section layout */
+section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #007acc;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Ordered list styling */
+ol {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+/* Contact links */
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Paragraph spacing */
+p {
+  margin-bottom: 10px;
+}
