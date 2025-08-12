@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Ledger – Patient Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+        header {
+            background: #004d40;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        main {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #004d40;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        th {
+            background: #e0f2f1;
+        }
+        ul {
+            background: #f1f8e9;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #004d40;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #00695c;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #004d40;
+            color: white;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 200px;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Health Ledger – Patient Registration Portal</h1>
+</header>
+
+<main>
+    <section>
+        <h2>About Health Ledger</h2>
+        <p>Health Ledger is a blockchain-powered health record system integrating with Kenya’s Smart ID cards and biometric authentication for secure, patient-controlled medical data management.</p>
+    </section>
+
+    <section>
+        <h2>Key Features</h2>
+        <ul>
+            <li>Blockchain-secured medical records</li>
+            <li>Patient-controlled access rights</li>
+            <li>Integration with NHIF and insurance providers</li>
+            <li>Offline functionality for rural clinics</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>System Overview</h2>
+        <table>
+            <tr>
+                <th>Module</th>
+                <th>Function</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Patient Database</td>
+                <td>Stores encrypted patient records</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>Insurance API</td>
+                <td>Links NHIF & private insurance</td>
+                <td>In Development</td>
+            </tr>
+            <tr>
+                <td>Biometric Verification</td>
+                <td>Confirms patient identity</td>
+                <td>Active</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Demo Image</h2>
+        <img src="https://via.placeholder.com/200x150.png?text=Health+Ledger" alt="Health Ledger Demo">
+    </section>
+
+    <section>
+        <h2>Patient Registration Form</h2>
+        <form action="#" method="post">
+            <!-- Basic Info -->
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="John Doe" required autocomplete="name">
+
+            <label for="idnumber">National ID Number:</label>
+            <input type="text" id="idnumber" name="idnumber" placeholder="12345678" required pattern="[0-9]{8}" title="Enter 8 digit ID number">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select one</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+
+            <!-- Contact Info -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+2547XXXXXXXX" required autocomplete="tel">
+
+            <!-- Medical Info -->
+            <label for="bloodgroup">Blood Group:</label>
+            <select id="bloodgroup" name="bloodgroup" required>
+                <option value="">Select one</option>
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>O+</option>
+                <option>O-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+            </select>
+
+            <label for="allergies">Known Allergies:</label>
+            <textarea id="allergies" name="allergies" placeholder="List any known allergies"></textarea>
+
+            <label for="emergency">Emergency Contact (Readonly):</label>
+            <input type="text" id="emergency" name="emergency" value="+254700000000" readonly>
+
+            <!-- File Upload -->
+            <label for="photo">Upload ID or Passport Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+
+            <!-- Agreement -->
+            <label>
+                <input type="checkbox" name="consent" required> I consent to Health Ledger storing my medical data securely.
+            </label>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    &copy; 2025 Health Ledger Kenya – All Rights Reserved
+</footer>
+
+</body>
+</html>
