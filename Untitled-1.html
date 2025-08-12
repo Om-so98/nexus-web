@@ -1,107 +1,115 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <title>Week 2 - Enhanced HTML</title>
-        </head>
-        <body>
-            <h2>Ordered Lists</h2>
-            <ol>
-                <li>Monday</li>
-                <li>Tuesday</li>
-                <li>Wednesday</li>
-            </ol>
-            <h2>Un-ordered lists</h2>
-            <ul>
-                <li>Thursday</li>
-                <li>Friday</li>
-            </ul>
-            <h2>Definition Lists</h2>
-            <dl>
-                <dt>HTML</dt>
-                <dd>HypertText Markup Language - a langiage for creating web pages.</dd>
-            </dl>
-            <h2>Nested Lists</h2>
-            <ol>
-                <li>Frontend Languages</li>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-                <li>Backend Languages</li>
-                <ul>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>Ruby</li>
-                </ul>
-            </ol>
-            <h2>Images</h2>
-            <img src="https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg" 
-            alt="Picture of hot air balloon" 
-            width="500" 
-            height="300">
-            <h2>Table</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Gender</th>
-                        <th>Country</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Eddy</td>
-                        <td>Male</td>
-                        <td>Kenya</td>
-                    </tr>
-                    <tr>
-                        <td>John</td>
-                        <td>Male</td>
-                        <td>Nigeria</td>
-                    </tr>
-                    <tr>
-                        <td>Jane</td>
-                        <td>Female</td>
-                        <td>South Africa</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h2>Embedding Videos  & Audio</h2>
-            <video width="500" height="300" controls>
-               <source src="https://videos.pexels.com/video-files/3571264/3571264-uhd_2560_1440_30fps.mp4" type="video/mp4">
-               Your browser does not support videos.
-            </video>
-            <audio>
-                <source src="" type="audio/mpeg">
-                Your browser does not support audio playback.
-            </audio>
-            <h2>Forms</h2>
-            <form action="location" method="">
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name" placeholder="Enter your name here...">
-                <br /><br />
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="Enter your email here..."> 
-                <br /><br />
-                <label for="age">Age:</label>
-                <input type="number" name="age" id="age" placeholder="Enter your age here...">
-                <br /><br />
-                <label for="dob">Date of Birth:</label>
-                <input type="date" name="dob" id="dob">
-                <br /><br />
-                <label for="gender">Gender:</label>
-                <input type="radio" name="gender" value="Male">Male<br />
-                <input type="radio" name="gender" value="Female">Female<br />
-                <br /><br />
-                <label for="cv">Upload CV:</label>
-                <input type="file" name="cv" id="cv">
-                <br /><br />
-                <label for="bio">Bio:</label>
-                <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Write your bio here..."></textarea>
-                <br /><br />
-                <input type="submit" value="Submit">
-            </form>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu Ledger - Enhanced Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        </body>
-    </html>
+<header>
+    <h1>Edu Ledger - Student Registration</h1>
+    <p>Secure academic records on blockchain</p>
+</header>
+
+<main>
+    <!-- Information List -->
+    <section>
+        <h2>Why Register with Edu Ledger?</h2>
+        <ul>
+            <li>Permanent, tamper-proof academic certificates</li>
+            <li>Easy verification for employers and institutions</li>
+            <li>24/7 secure online access</li>
+        </ul>
+    </section>
+
+    <!-- Sample Table -->
+    <section>
+        <h2>Available Registration Plans</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Plan</th>
+                    <th>Features</th>
+                    <th>Annual Fee</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basic</td>
+                    <td>Secure certificate storage</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>Standard</td>
+                    <td>Storage + employer verification</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>Premium</td>
+                    <td>All features + lifetime storage</td>
+                    <td>$50</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+        <h2>How Edu Ledger Works</h2>
+        <video width="100%" controls>
+            <source src="edu-ledger-demo.mp4" type="video/mp4">
+            Your browser does not support video playback.
+        </video>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+        <h2>Student Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+254 700 000 000" pattern="^\+?\d{10,15}$" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="studentID">Student ID:</label>
+            <input type="text" id="studentID" name="studentID" value="Auto-generated" readonly>
+
+            <label for="program">Program of Study:</label>
+            <select id="program" name="program" required>
+                <option value="">--Select Program--</option>
+                <option value="mechatronics">Mechatronics Engineering</option>
+                <option value="software">Software Development</option>
+                <option value="business">Business Administration</option>
+                <option value="agriculture">Agricultural Technology</option>
+            </select>
+
+            <label for="certUpload">Upload Academic Certificate:</label>
+            <input type="file" id="certUpload" name="certUpload" accept=".pdf,.jpg,.png" required>
+
+            <label for="bio">Short Bio:</label>
+            <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+
+            <label>
+                <input type="checkbox" name="terms" required> I agree to the terms and conditions
+            </label>
+
+            <button type="submit">Submit Registration</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Edu Ledger. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

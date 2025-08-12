@@ -1,6 +1,5 @@
-name = "omuoso"
-school = 670
+favourite : = input("Whats your best meal?")
 
-print("my name is",name)
-print("my school is",school)
+hobby = input("whats your hobby?")
 
+print(" Adrian thats nice your {favourite}! and your {hobby}! match a lot")
